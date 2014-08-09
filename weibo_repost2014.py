@@ -25,8 +25,8 @@ def weiboClient():
     APP_SECRET = '2fc9ed9a3b9e7f37c3e6667464f0617e' # app secret
     CALLBACK_URL = 'https://api.weibo.com/oauth2/default.html' # callback url
     AUTH_URL = 'https://api.weibo.com/oauth2/authorize'
-    USERID = 'wangchj04'
-    PASSWD = 'weibochengwang6' #your pw
+    USERID = ''
+    PASSWD = '' #your pw
     client = APIClient(app_key=APP_KEY, app_secret=APP_SECRET, redirect_uri=CALLBACK_URL)
     referer_url = client.get_authorize_url()
     print "referer url is : %s" % referer_url
